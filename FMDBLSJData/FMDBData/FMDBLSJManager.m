@@ -67,7 +67,7 @@
     _pathName = pathName;
     /* -----------  获取沙盒路径  -----------*/
     NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
-    NSString *sqlitePath = [path stringByAppendingString:[NSString stringWithFormat:@"\%@.sqlite",pathName]];
+    NSString *sqlitePath = [path stringByAppendingString:[NSString stringWithFormat:@"/%@.sqlite",pathName]];
     
     NSLog(@"%@",path);
     
